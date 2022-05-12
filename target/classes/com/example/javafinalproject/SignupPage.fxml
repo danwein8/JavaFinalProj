@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafinalproject.SignUpDef">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="FirstNametf" layoutX="139.0" layoutY="70.0" promptText="First Name" />
+            <TextField fx:id="LastNametf" layoutX="139.0" layoutY="127.0" promptText="Last Name" />
+            <TextField fx:id="EmailAddresstf" layoutX="139.0" layoutY="187.0" promptText="Email Address" />
+            <PasswordField fx:id="Passwordtf" layoutX="139.0" layoutY="250.0" promptText="Password" />
+            <PasswordField fx:id="ConfirmPasswordtf" layoutX="139.0" layoutY="319.0" promptText="Confirm Password" />
+            <Label fx:id="ConfirmPasswordlbl" layoutX="139.0" layoutY="290.0" text="Confirm Password:" />
+            <Label fx:id="Passwordlbl" layoutX="139.0" layoutY="222.0" text="Password:" />
+            <Label fx:id="EmailAddresslbl" layoutX="139.0" layoutY="161.0" text="Email Address:" />
+            <Label fx:id="LastNamelbl" layoutX="139.0" layoutY="103.0" text="Last Name:" />
+            <Label fx:id="FirstNamelbl" layoutX="139.0" layoutY="39.0" text="First Name:" />
+            <Label fx:id="PasswordsDoNotMatch" layoutX="338.0" layoutY="268.0" />
+            <Label fx:id="EmailAddressIsUsedlbl" layoutX="389.0" layoutY="192.0" />
+            <Label fx:id="FillAllFeilds" layoutX="405.0" layoutY="103.0" />
+            <Button fx:id="SignupBT" layoutX="152.0" layoutY="361.0" mnemonicParsing="false" onAction="#SignUp" text="Sign Up" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
